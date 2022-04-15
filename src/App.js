@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <div className="container"></div>
       <header className="App-header">
-        Dictionray
+        Dictionary
       </header>
       <main>
         <Dictionary />
