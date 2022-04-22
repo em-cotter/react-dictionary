@@ -5,13 +5,13 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
-      <div className="container"></div>
-      <header className="App-header">
-        Dictionary
-      </header>
-      <main>
-        <Dictionary />
-      </main>
+      <div className="container">
+        
+        <header className="App-header">Dictionary</header>
+        <main>
+          <Dictionary />
+        </main>
+      </div>
     </div>
   );
 }

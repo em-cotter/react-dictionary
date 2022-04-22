@@ -8,16 +8,34 @@ return (
   <div className="Meaning">
     <h3>{props.meanings.partOfSpeech}</h3>
     {props.meanings.definitions.map(function(definition, index){
+      if(definition.example){
         return (
           <div key={index}>
             <p>
-              <strong>Definition:</strong>{definition.definition}
+              <strong >Definition: </strong>
               <br/>
-              <strong>Example:</strong><em>{definition.example}</em>
+              {definition.definition}
+              <br/>
+              
+              <strong className="Example">Example: </strong><em>{definition.example}</em>
               <Synonyms synonyms={definition.synonyms} />
             </p>
           </div>
-        );
+        )}else{
+           return (
+             <div key={index}>
+               <p>
+                 <strong>Definition: </strong>
+                 <br/>
+                 {definition.definition}
+                 <br />
+                 
+                 <em>{definition.example}</em>
+                 <Synonyms synonyms={definition.synonyms} />
+               </p>
+             </div>
+           );
+        };
     })}
     
   </div>
