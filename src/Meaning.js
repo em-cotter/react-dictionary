@@ -9,7 +9,7 @@ return (
     <h3>{props.meanings.partOfSpeech}</h3>
     {props.meanings.definitions.map(function(definition, index){
         return (
-          <div key="index">
+          <div key={index}>
             <p>
               <strong>Definition:</strong>{definition.definition}
               <br/>
