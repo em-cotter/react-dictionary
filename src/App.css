@@ -7,7 +7,11 @@
   color: black;
 }
 .App{
-  margin: 20px auto;
+  background-color: black;
+
+}
+.Inside{
+  margin: 0 auto;
   border-radius: 16px;
   background: #edeef7;
   max-width: 700px;
@@ -17,4 +21,5 @@
 .Footer{
   text-align: center;
   font-size: 12px;
+  
 }
